@@ -1,17 +1,21 @@
+
 public class node {
-	
-	String name;
-	int age;
-	node next;
-	public node(){
-		
+	int data;
+	public node next;
+	public node previous;
+	public node()
+	{
+		data=0;
+		next = null;
+		previous=null;
 	}
-	public node(String n,int a){
-		this.age=a;
-		this.name=n;
-	}
-	public void display(){
-		System.out.println(" Name "+this.name+" age "+this.age );
+	public node(int i)
+	{
+		data=i;
+		next = null;
+		previous=null;
 	}
 
+
+	
 }
